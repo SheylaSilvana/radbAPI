@@ -1,5 +1,5 @@
 function getValidIPv6Addresses() {
-  var ss = SpreadsheetApp.openById('11v7lVNrWb4MJRCemwD1NJshwefPNGGgriZnFxgf2YKc');
+  var ss = SpreadsheetApp.openById('ID da planilha');
   var sheet = ss.getSheets()[0];
   var lastRow = sheet.getLastRow();
   var lastColumn = sheet.getLastColumn();
@@ -40,11 +40,11 @@ function getValidIPv6Addresses() {
   Logger.log(ipv6String6);
 
   // Envia uma solicitação de API para cada endereço IPv6 válido
-  var apiUrl = "https://api.radb.net/api/radb/route6?password=meg%40link";
+  var apiUrl = "https://api.radb.net/api/radb/route6?password='Password'";
   var options = {
     method: "PUT",
     headers: {
-      "Authorization": "Basic c3Vwb3J0ZUBtZWdhbGlua3BpYXVpLmNvbS5icjptZWdAbGluaw==",
+      "Authorization": "Basic ",
       "Content-Type": "application/json",
       "Accept": "text/plain"
     },
@@ -74,11 +74,11 @@ function getValidIPv6Addresses() {
                 },
                 {
                   "name": "mnt-by",
-                  "value": "MAINT-AS265269"
+                  "value": "MAINT-AS000000"
                 },
                 {
                   "name": "changed",
-                  "value": "suporte@megalinkpiaui.com.br"
+                  "value": "exemplo@gmail.com.br"
                 },
                 {
                   "name": "source",
@@ -141,11 +141,11 @@ function getValidIPv6Addresses() {
                 },
                 {
                   "name": "mnt-by",
-                  "value": "MAINT-AS265269"
+                  "value": "MAINT-AS000000"
                 },
                 {
                   "name": "changed",
-                  "value": "suporte@megalinkpiaui.com.br"
+                  "value": "exemplo@gmail.com.br"
                 },
                 {
                   "name": "source",
